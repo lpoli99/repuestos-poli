@@ -1,0 +1,38 @@
+[
+    {
+        "imagen":"../media/bridgestone.jpg",
+        "titulo":"Neumatico Bridgestone",
+        "descripcion":"175/70 R14, A/T",
+        "precio":"$10000"
+    },
+    {
+        "imagen":"../media/pirelli.jpg",
+        "titulo":"Neumatico Pirelli",
+        "descripcion":"170/65 R13 Ruta",
+        "precio":"$8000"
+    },
+    {
+        "imagen":"../media/amortiguador-delantero-derecho-chevrolet-spark-ii.jpg",
+        "titulo":"Amortiguador Corven",
+        "descripcion":"Para Renault Kangoo 2007 a 2013",
+        "precio":"$7000"
+    },
+    {
+        "imagen":"../media/total-rosa.jpg",
+        "titulo":"Refrigerante Total",
+        "descripcion":"Color Rosa, tipo A",
+        "precio":"$2000"
+    },
+    {
+        "imagen":"../media/tir-amarillo.jpg",
+        "titulo":"Refrigerante TIR",
+        "descripcion":"Color Amarillo, tipo A",
+        "precio":"$1500"
+    },
+    {
+        "imagen":"../media/gulf.png",
+        "titulo":"Aceite Gulf",
+        "descripcion":"10W-40, tamaño 4L",
+        "precio":"$6000"
+    }
+]

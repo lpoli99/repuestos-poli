@@ -16,8 +16,8 @@ class part{
 const neumatico1 = new part("../media/bridgestone.jpg", "Neumatico Bridgestone", "175/70 R14, A/T", "$10000");
 const neumatico2 = new part("../media/pirelli.jpg", "Neumatico Pirelli", "170/65 R13 Ruta", "$8000");
 const amortiguador1 = new part("../media/amortiguador-delantero-derecho-chevrolet-spark-ii.jpg", "Amortiguador Corven", "Para Renault Kangoo 2007 a 2013", "$7000");
-const refrigerante1 = new part("../media/total rosa.jpg", "Refrigerante Total", "Color Rosa, tipo A", "$2000");
-const refrigerante2 = new part("../media/tir amarillo.jpg", "Refrigerante TIR", "Color Amarillo, tipo A", "$1500");
+const refrigerante1 = new part("../media/total-rosa.jpg", "Refrigerante Total", "Color Rosa, tipo A", "$2000");
+const refrigerante2 = new part("../media/tir-amarillo.jpg", "Refrigerante TIR", "Color Amarillo, tipo A", "$1500");
 const aceite1 = new part("../media/gulf.png", "Aceite Gulf", "10W-40, tamaño 4L", "$6000");
 
 //PUSH DE OBJETOS A RESPECTIVOS ARRAYS
