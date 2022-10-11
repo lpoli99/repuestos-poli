@@ -5,6 +5,7 @@ const templateCard = document.getElementById('template-card').content;
 const templateFooter = document.getElementById('template-footer').content;
 const templateCart = document.getElementById('template-carrito').content;
 const fragment = document.createDocumentFragment();
+const btnSwitch = document.querySelector('#switch');
 let cart = {}
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -49,6 +50,12 @@ const addCart = e => {
         setCart(e.target.parentElement);
     }
     e.stopPropagation();
+    Toastify({
+        text: "Item añadido al carrito!",
+        duration: 1800,
+        gravity: "top",
+        position: "left"
+    }).showToast();
 
 }
 
@@ -111,6 +118,12 @@ const showFooter = () => {
     btnEmptyCart.addEventListener('click', () => {
         cart = {};
         showCart();
+        Toastify({
+            text: "Carrito vaciado!",
+            duration: 1800,
+            gravity: "top",
+            position: "left"
+        }).showToast();
     });
 }
 
@@ -121,6 +134,12 @@ const btnAction = e => {
         product.quantity++;
         cart[e.target.dataset.id] = {...product};
         showCart();
+        Toastify({
+            text: "Item añadido al carrito!",
+            duration: 1800,
+            gravity: "top",
+            position: "left"
+        }).showToast();
     }
     //Disminuir
     if(e.target.classList.contains('btn-danger')) {
@@ -130,6 +149,32 @@ const btnAction = e => {
             delete cart[e.target.dataset.id];
         }
         showCart();
+        Toastify({
+            text: "Item eliminado del carrito!",
+            duration: 1800,
+            gravity: "top",
+            position: "left"
+        }).showToast();
     }
     e.stopPropagation();
 }
+
+// MODO OSCURO 
+btnSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active');
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('modo-oscuro', 'true');
+    }else {
+        localStorage.setItem('modo-oscuro', 'false');
+    }
+});
+
+if(localStorage.getItem('modo-oscuro') === 'true'){
+    document.body.classList.add('dark');
+     btnSwitch.classList.add('active');
+}else {
+    document.body.classList.remove('dark');
+    btnSwitch.classList.remove('active');
+};
+
