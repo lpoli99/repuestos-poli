@@ -40,5 +40,26 @@
         "titulo":"Aceite Gulf",
         "descripcion":"10W-40, tamaño 4L",
         "precio":"6000"
+    },
+    {
+        "imagen":"../media/disco-vento.jpg",
+        "id":"7",
+        "titulo":"Disco de freno Vento",
+        "descripcion":"Discos delanteros Volkswagen Vento",
+        "precio":"5500"
+    },
+    {
+        "imagen":"../media/kit-correa-corsa.webp",
+        "id":"8",
+        "titulo":"Kit correa y bomba Corsa",
+        "descripcion":"Correa de distribucion y bomba de agua para Chevrolet Corsa",
+        "precio":"3800"
+    },
+    {
+        "imagen":"../media/optica-amarok.webp",
+        "id":"9",
+        "titulo":"Optica Amarok",
+        "descripcion":"Optica delantera derecha para Volkswagen Amarok V&",
+        "precio":"7600"
     }
 ]
